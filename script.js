@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch(`https://api.github.com/users/${username}/repos`)
         .then(response => response.json())
         .then(data => {
+            // Sort repositories by updated_at date
+            data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
             data.forEach(repo => {
                 const listItem = document.createElement('div');
                 listItem.className = 'repo-item';
