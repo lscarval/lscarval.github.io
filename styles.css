@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+header a {
+    color: #00acee;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    padding: 1rem;
+}
+
+section#activities {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+#activity-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
