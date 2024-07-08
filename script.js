@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             // Sort repositories by updated_at date
             data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+            console.log('Sorted Repositories:', data); // Debugging line to verify sorting
+
             data.forEach(repo => {
                 const listItem = document.createElement('div');
                 listItem.className = 'repo-item';
