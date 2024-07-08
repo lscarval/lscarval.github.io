@@ -20,12 +20,19 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             data.forEach(repo => {
-                const listItem = document.createElement('li');
+                const listItem = document.createElement('div');
+                listItem.className = 'repo-item';
                 const link = document.createElement('a');
                 link.href = repo.html_url;
                 link.target = '_blank';
                 link.textContent = repo.name;
+
+                const description = document.createElement('span');
+                description.className = 'repo-description';
+                description.textContent = repo.description || 'No description provided';
+
                 listItem.appendChild(link);
+                listItem.appendChild(description);
                 repoList.appendChild(listItem);
             });
         })
