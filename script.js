@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const username = 'lscarval';
     const activityList = document.getElementById('activity-list');
+    const repoList = document.getElementById('repo-list');
 
+    // Fetch GitHub activities
     fetch(`https://api.github.com/users/${username}/events/public`)
         .then(response => response.json())
         .then(data => {
@@ -12,6 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         })
         .catch(error => console.error('Error fetching GitHub activities:', error));
+
+    // Fetch GitHub repositories
+    fetch(`https://api.github.com/users/${username}/repos`)
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(repo => {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = repo.html_url;
+                link.target = '_blank';
+                link.textContent = repo.name;
+                listItem.appendChild(link);
+                repoList.appendChild(listItem);
+            });
+        })
+        .catch(error => console.error('Error fetching GitHub repositories:', error));
 
     function formatEvent(event) {
         const { type, repo, created_at } = event;
