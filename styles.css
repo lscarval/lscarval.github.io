@@ -41,11 +41,13 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#activity-list,
 #repo-list {
     list-style: none;
     padding: 0;
 }
 
+#activity-list li,
 #repo-list li {
     padding: 0.5rem 0;
     border-bottom: 1px solid #ddd;
