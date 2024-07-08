@@ -1,18 +1,19 @@
 # lscarval.github.io
 
-Welcome to my personal GitHub page! This page showcases my recent GitHub activities, repositories, and includes a brief bio and summary of my professional experiences.
+Welcome to my personal GitHub page! This page showcases my recent GitHub activities, repositories, and includes a brief bio, summary of my professional experiences, and education and certifications.
 
 ## Overview
 
-This repository contains the source code for my GitHub Pages site, which displays my recent GitHub activities, a list of my repositories, and provides a link to my GitHub profile. The site is built using HTML, CSS, and JavaScript.
+This repository contains the source code for my GitHub Pages site, which displays my recent GitHub activities, a list of repositories with descriptions, and provides links to my GitHub and LinkedIn profiles. The site is built using HTML, CSS, and JavaScript.
 
 ## Features
 
 - **Bio:** A brief biography highlighting my professional background.
 - **Summary of Experiences:** An overview of my key professional experiences.
+- **Education & Certifications:** Details about my educational background and certifications.
 - **Recent Activities:** Displays the 10 most recent public activities from my GitHub account.
-- **Repositories:** A list of my public repositories.
-- **Profile Link:** Provides a direct link to my GitHub profile.
+- **Repositories:** A list of my public repositories with descriptions.
+- **Profile Links:** Provides direct links to my [GitHub profile](https://github.com/lscarval) and [LinkedIn profile](https://www.linkedin.com/in/luciano-s-carvalho/).
 
 ## Getting Started
 
@@ -61,7 +62,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or suggestions, please reach out to me via my GitHub profile: [lscarval](https://github.com/lscarval).
+For any questions or suggestions, please reach out to me via my GitHub profile: [lscarval](https://github.com/lscarval) or my LinkedIn profile: [Luciano S Carvalho](https://www.linkedin.com/in/luciano-s-carvalho/).
 
 ---
 
